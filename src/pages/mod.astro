@@ -1,0 +1,13 @@
+---
+import Mods from "../components/mods.svelte"
+import Layout from "../layouts/Layout.astro"
+import data from "../moddb.json"
+let mods = data.Mods
+---
+
+<Layout title="Mod Page" class="bg-[url(almanac.webp)] bg-no-repeat bg-[length:100vw_100vh] overflow-y-hidden px-[9vw]">
+
+    <Mods client:load />
+
+</Layout>
+

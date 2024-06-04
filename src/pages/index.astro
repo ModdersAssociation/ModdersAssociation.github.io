@@ -1,0 +1,125 @@
+---
+import Layout from '../layouts/Layout.astro';
+import data from "../moddb.json"
+  interface Mod {
+  Name: string
+  Versions: string[]
+  DownloadLinks: string[]
+  Description: string
+  LogoPath: string
+  Release: string
+  Rating: number
+  Screenshots: string[]
+}
+
+let Mods = data.Mods as Mod[]
+
+let FeaturedMods = data.Featured.map((val, index) => {
+  return Mods.filter((v2, i) => {
+    return v2.Name == val
+  })[0]
+})
+
+const sortByDate = (a: Mod, b: Mod) => {
+    return new Date(a.Release).getTime() - new Date(b.Release).getTime();
+};
+
+// Sorting the array based on the 'date' property using the custom function
+let NewMods = Mods;
+NewMods.sort(sortByDate).splice(0,3)
+console.log(NewMods)
+---
+
+<Layout title="Welcome to Astro.">
+	<nav class="h-[66vh] overflow-hidden bg-gradient-to-b from-red-800 via-red-400 to-red-300">
+		<div class="float-right mr-[5vw] mt-2	 flex flex-row gap-2">
+			<a href="/" class="py-2 px-4 bg-gradient-to-b from-red-200 via-red-600 to-red-700 rounded-md text-white    font-bold shadow-md">Home</a>
+			<a href="/mod" class="py-2 px-4 bg-gradient-to-b from-red-200 via-red-600 to-red-700 rounded-md text-white font-bold shadow-md">Mods</a>
+
+		</div>
+		<img src="malogo.webp" alt="logo" class="aspect-[1/0.9] h-[9rem]">
+		<div id="curvecontainer" class="w-full flex justify-center mt-[5rem]">
+		  <div id="curve" class="aspect-square overflow-hidden bg-[url(stars.webp)] flex-1 rounded-[50%] w-[120%] scale-125 z-3 grid justify-center">
+			<img src="modpage.webp" alt="motm" class="relative object-cover"/>
+		  </div>
+		</div>
+	  </nav>
+		<main class="flex flex-col">
+		  <section class="flex h-16  text-white font-bold text-xl">
+			<a href="/mod" class="new-mods-btn pointer flex-1 focus:text-2xl flex justify-center items-center gap-4">
+			  <img src="download.webp" class="w-10" alt="">
+			  New Mods
+			</a>
+			<a href="/mod" class="featured-mods-btn pointer flex-1 focus:text-2xl flex justify-center items-center gap-4">
+			  <img src="dl2.webp" class="w-10" alt="">
+			  Featured Mods
+			</a>
+		  </section>
+		  <section class="mods h-[calc(100vh-66vh-4rem)] flex">
+			<div class="newmods flex flex-1 bg-[#EA580c] justify-evenly">
+				{
+					NewMods.map(
+						(mod) => 						
+						<a class="flex-1 border-l border-r border-orange-500 flex justify-center items-center">
+								<img src={mod.LogoPath} alt={mod.Name} class="max-h-full"/>
+						</a>
+					)
+				}
+			</div>
+			<div class="featuredmods flex flex-1 bg-[--newModsGradientColor2f]">
+				{
+					FeaturedMods.map(
+						(mod) => {
+							
+							return <a class="flex-1 border-l border-r border-cyan-500 flex justify-center items-center">
+									<img src={mod.LogoPath} alt={mod.Name} class="max-h-full"/>
+								   </a>
+						}				
+					)
+				}
+			</div>
+		  </section>
+		</main>  
+	  </main> 
+</Layout>
+
+<style>
+html, body, #app { height: 100vh; width: 100vw; margin: 0; }
+    
+.new-mods-btn {
+    --newModsGradientColor1: rgb(253 224 71);
+    --newModsGradientColor2: #EA580c;
+    background: linear-gradient(var(--newModsGradientColor1), var(--newModsGradientColor2));
+    transition: --newModsGradientColor1 .5s, --newModsGradientColor2 .5s, all .5s;
+}
+
+.new-mods-btn:hover {
+    filter: brightness(80%);
+}
+
+.new-mods-btn:active {
+    --newModsGradientColor2: rgb(253 224 71);
+    --newModsGradientColor1: #EA580c;
+}
+.featured-mods-btn {
+    --newModsGradientColor1f: #5bd4f1;
+    --newModsGradientColor2f: #1668d2;
+    background: linear-gradient(var(--newModsGradientColor1f), var(--newModsGradientColor2f));
+    transition: --newModsGradientColor1f .5s, --newModsGradientColor2f .5s, all .5s;
+}
+
+.featured-mods-btn:hover {
+    filter: brightness(80%);
+}
+
+.featured-mods-btn:active {
+    --newModsGradientColor1f: #1668d2;
+    --newModsGradientColor2f: #5bd4f1;
+}
+.featuredmods a, .newmods a {
+	transition: all 0.5s;
+}
+.featuredmods a:hover, .newmods a:hover  {
+	filter: brightness(50%);
+}
+</style>

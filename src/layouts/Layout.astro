@@ -1,0 +1,55 @@
+---
+import "../app.css"
+import { ViewTransitions } from 'astro:transitions';
+interface Props {
+	title: string;
+	class?: string;
+}
+
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+		<link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet"/>
+		<script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
+		<meta name="generator" content={Astro.generator} />
+		<ViewTransitions/>
+		<title>{Astro.props.title}</title>
+	</head>
+	<body class={"p-0" + " overflow-hidden " + Astro.props.class}>
+		<slot />
+	</body>
+</html>
+
+<style>
+	
+@property --newModsGradientColor1 {
+    syntax: '<color>';
+    initial-value: rgb(253 224 71);
+    inherits: false;
+}
+  
+@property --newModsGradientColor2 {
+    syntax: '<color>';
+    initial-value: #ea580c;
+    inherits: false;
+}
+
+@property --newModsGradientColor1f {
+    syntax: '<color>';
+    initial-value: #5bd4f1 ;
+    inherits: false;
+}
+  
+@property --newModsGradientColor2f {
+    syntax: '<color>';
+    initial-value: #1668d2;
+    inherits: false;
+}
+</style>

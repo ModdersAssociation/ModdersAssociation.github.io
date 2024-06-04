@@ -1,0 +1,118 @@
+{
+    "Mods": [
+        {
+            "Name": "M.O.T.S",
+            "Versions": [
+                "Final Version"
+            ],
+            "DownloadLinks":
+            [
+                "https://gamebanana.com/dl/1117084"
+            ],
+            "Description": "The 'anything goes' type of mod, but on GOTY. Quite a record setter.",
+            "LogoPath": "mots.webp",
+            "Release": "Unknown",
+            "Rating": 4,
+            "Screenshots": [
+                "https://media.discordapp.net/attachments/1066295642663694356/1169666717430063194/ezgif.com-add-text_2.gif?ex=665e90c4&is=665d3f44&hm=10ede24bbb23a93c3ced9ee75ba1489467fbd3efd0eb0c2a95b8ab452fe7c942&=&width=398&height=224&",
+                "https://media.discordapp.net/attachments/1066295642663694356/1169666717430063194/ezgif.com-add-text_2.gif?ex=665e90c4&is=665d3f44&hm=10ede24bbb23a93c3ced9ee75ba1489467fbd3efd0eb0c2a95b8ab452fe7c942&=&width=398&height=224&"
+            ]
+        },
+        {
+            "Name": "Expanded & Enhanced",
+            "Versions": [
+                "2.0",
+                "Final Legacy Release"
+            ],
+            "DownloadLinks": 
+            [
+                "https://www.mediafire.com/file/7icfhse0n0aw48r/Plants_Vs._Zombies_Expanded_And_Enhanced_2.0.rar/file",
+                "https://www.mediafire.com/file/ykfa2g8o85nhgbu/EE_Legacy_Final_Release.rar/file"
+            ],
+            "Description": 
+            "The legacy version with heavy inspiration from other parts of the franchise to form a new experience!",
+            "LogoPath": "eae.webp",
+            "Release": "2022-09-25",
+            "Screenshots": [
+                "https://media.discordapp.net/attachments/1066295642663694356/1169666717430063194/ezgif.com-add-text_2.gif?ex=665e90c4&is=665d3f44&hm=10ede24bbb23a93c3ced9ee75ba1489467fbd3efd0eb0c2a95b8ab452fe7c942&=&width=398&height=224&"
+            ]
+        },
+        {
+            "Name": "DLC Mod",
+            "Versions": [
+                "1.1",
+                "1.2",
+                "1.3"
+            ],
+            "DownloadLinks": 
+            [
+                "https://www.mediafire.com/file/7icfhse0n0aw48r/Plants_Vs._Zombies_Expanded_And_Enhanced_2.0.rar/file",
+                "https://www.mediafire.com/file/ykfa2g8o85nhgbu/EE_Legacy_Final_Release.rar/file"
+            ],
+            "LogoPath": "dlc.webp",
+            "Release": "2024-3-31",
+            "Screenshots": [
+                "https://media.discordapp.net/attachments/1066295642663694356/1169666717430063194/ezgif.com-add-text_2.gif?ex=665e90c4&is=665d3f44&hm=10ede24bbb23a93c3ced9ee75ba1489467fbd3efd0eb0c2a95b8ab452fe7c942&=&width=398&height=224&"
+            ]
+        },
+        {
+            "Name": "Hybrid",
+            "Versions": [
+                "1.0",
+                "1.1",
+                "1.2(OLD)",
+                "1.2",
+                "2.0",
+                "2.0.88"
+            ],
+            "DownloadLinks": [
+                "https://mega.nz/file/PyYHmCAZ#PexGCESnlQvCNIRqPWNOPbHtFtPvjMvcVS5wASzukXw",
+                "https://mega.nz/file/ijxWlQrB#eP4Jxl_kowD1XiIpxWC8jhB3agkseCOP7Bk-sgBqyus",
+                "https://mega.nz/file/3jxQEbgS#pnkvpdzvxZMA5KZpuaKofLICmUO-q018HDLGiMu7_cY",
+                "https://mega.nz/file/2yAnEQZa#3cjOpLKUOl5EuSCIWIIomGTg9jxP-LACz6iTu0D8o2U",
+                "https://mega.nz/file/z64xlLIb#GIK9z5b_QBWUFSyQRQtujoJ-odLapB33BEh-xnwkqPQ",
+                "https://mega.nz/file/OrBE0QQB#w2YdcDPIzeqVdlGrlZb8mYf3M9q05TxeRlKc60H4qY4"
+            ],
+            "LogoPath": "pvzhybrid.webp",
+            "Release": "2024-3-27",
+            "Screenshots": [
+                "https://media.discordapp.net/attachments/1066295642663694356/1169666717430063194/ezgif.com-add-text_2.gif?ex=665e90c4&is=665d3f44&hm=10ede24bbb23a93c3ced9ee75ba1489467fbd3efd0eb0c2a95b8ab452fe7c942&=&width=398&height=224&"
+            ],
+            "Description": "As the name goes, this is a mod that tend to mix 2 or more characters into 1, with different combination of abilities between the plants and the zombies, to have more exciting and special fights as well as being in the OG vibes all the time."
+        },
+        {
+            "Name": "Extra Mod",
+            "Versions": [
+                "Default"
+            ],
+            "DownloadLinks": [
+                "https://drive.google.com/file/d/1UlhrkuDzO3vlZVO0nax-KB96t2n2h6pL/view?usp=sharing"
+            ],
+            "LogoPath": "pvzextra.webp",
+            "Release": "2022-9-15",
+            "Screenshots": [
+                "https://media.discordapp.net/attachments/1066295642663694356/1169666717430063194/ezgif.com-add-text_2.gif?ex=665e90c4&is=665d3f44&hm=10ede24bbb23a93c3ced9ee75ba1489467fbd3efd0eb0c2a95b8ab452fe7c942&=&width=398&height=224&"
+            ]
+        },
+        {
+            "Name": "Grass Of Doom",
+            "Versions": [
+                "Default"
+            ],
+            "DownloadLinks": [
+                "https://drive.google.com/file/d/1-l2FrFakUKx0d-MFJKZv-7Wt7UzbN06z/view?usp=sharing"
+            ],
+            "LogoPath": "grassofdoom.webp",
+            "Description": "grass of doom! not your oridnary hard mode mod. want to know why? (its fucking easy)",
+            "Release": "2024-5-19",
+            "Screenshots": [
+                "https://media.discordapp.net/attachments/1066295642663694356/1169666717430063194/ezgif.com-add-text_2.gif?ex=665e90c4&is=665d3f44&hm=10ede24bbb23a93c3ced9ee75ba1489467fbd3efd0eb0c2a95b8ab452fe7c942&=&width=398&height=224&"
+            ]
+        }
+    ],
+    "Featured": [
+        "M.O.T.S",
+        "Hybrid",
+        "Expanded & Enhanced"
+    ]
+}
