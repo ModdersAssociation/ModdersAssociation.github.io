@@ -61,7 +61,6 @@
                     }else {
                         currentMod = mod
                     }
-                    }}
                 }} class="aspect-[110/100] mod-selector flex items-center justify-center hover:bg-gray-200 transition-colors bg-white darken"><img class="w-full max-h-full" src={mod.LogoPath} /></button>
             {/each}
         </div>
@@ -86,7 +85,7 @@
             }else {
                 dialog.showModal()
             }
-            
+
                         }}
                      class="absolute bottom-3 right-0 ml-auto mr-auto left-0 bg-purple-600 w-fit px-7 text-white font-bold text-xl rounded-xl hover:bg-purple-500 active:scale-90 transition-all hover:shadow-2xl shadow-black  py-2">Download</button>
                 </div>
