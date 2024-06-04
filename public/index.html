@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="base.css"/>
+    <title>PVZ Modders Association</title>
+    <style>
+        @font-face {
+            font-family: "HOT";
+            src: url(HouseofTerror\ Regular.otf);
+        }
+        .navbar .sc img {
+            border-top-left-radius: 50% 100%;
+            border-top-right-radius: 50% 100%;
+            position: absolute;
+            top: 120px;
+            right: -200px;
+            z-index: 1;
+            object-fit: cover;
+            text-align: center;
+            box-sizing: border-box;
+            background-repeat: no-repeat;
+            
+            background-size: 80% 100%;
+            font-family: 'HOT';
+            background-position: calc(50vw - 500px) center;
+            text-shadow: 0 0 10px black;
+            background-color: #020d43;
+            font-size: 40px;
+            text-align: center;
+            width: 120%;
+
+              height: 100%;
+        }
+        .sc h1 {
+            font-family: "HOT";
+            font-weight: lighter;
+            font-size: calc(3vw + 3vh + 2vmin);
+
+            margin-left: 60px;
+            color: white;
+        }
+        .navbar {
+            background: linear-gradient(180deg, rgba(202,20,26,1) 80%, rgba(249,141,144,1) 100%);
+            height: 486px;
+            width: 100%;
+            position: relative;
+            padding-bottom: 20%;
+            overflow: hidden;
+            box-sizing: border-box;
+            z-index: 2;
+            display: flex;
+        }
+
+        .malogo {
+            display: block;
+            max-width: 300px;
+            max-height: 250px;
+            translate: 0 -10px;
+            aspect-ratio:   368 / 314 ;
+            height: auto;
+        }
+
+        .navbar a:not(.disc) {
+            font-size: x-large;
+            display: inline-block;
+            overflow: hidden;
+            border-radius: 12px;
+            font-weight: bold;
+            font-family: Helvetica;
+            box-shadow: 0 0 9px black;
+            display: grid;
+            place-items: center;
+            max-width:   calc(10vw + 10vh + 10vmin);
+            min-width: 100px;
+            margin-top: 2.2%;
+            border: none;
+            color:white;
+            outline: none;
+            background: linear-gradient(360deg, rgba(202,20,26,1) 35%, rgb(255, 184, 186) 100%);
+            cursor: pointer !important;
+            max-height: 49px;
+            margin-left: 20px;
+            pointer-events: auto; /* This is the default, but setting it explicitly can help */
+
+        }
+        .navbar a:nth-of-type(3) {
+            margin-right: 20px;
+        }
+        .navbar a:nth-of-type(1) {
+            margin-LEFT: 0;
+        }
+        .navbar a:hover {
+            background: linear-gradient(360deg, rgb(197, 36, 41) 35%, rgb(255, 209, 211) 100%);
+
+        }
+        .twinbtns button {
+            width: 50vw !important;
+            height: 90px;
+            font-weight: bold;
+            font-size: xx-large;
+            cursor: pointer;
+        }
+        .twinbtns button:nth-of-type(1) {
+            background: linear-gradient(180deg, rgba(255,201,0,1) 20%, rgba(255,98,0,1) 59%);
+            border: none;
+            color:white;
+            outline: none;
+            z-index: 999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .twinbtns button:nth-of-type(2) {
+            background: linear-gradient(180deg, #5bd4f1 20%, #1668d2 59%);
+            border: none;
+            color:white;
+            outline: none;
+            z-index: 999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+        .twinbtns {
+            display: flex;
+        }
+        .dl {
+            display: inline;
+            width: 50px;
+        }
+        .motm {
+            width: 400px;
+            height: 200px;
+            margin-left: 40px;
+        }
+        .mods {
+            display: flex;
+            z-index: 999999;
+        }
+        .newmods .featuredmods {
+            display: flex;
+            flex-direction: row;
+        }
+        .newmods > .mod {
+            background-color: orange;
+            border: 5px solid rgba(255,98,0,1);
+        }
+        .featuredmods > .mod {
+            background-color: blue;
+            border: 5px solid #1668d2;
+        }
+        .modcategory {
+            display: flex;
+            width: 50vw;
+        }
+        .mod {
+            height: 154px;
+            padding: 10px;
+            text-align: center;
+            overflow: hidden;
+        }
+        .mod img {
+            max-width: 100%;
+            max-height: 65%;
+            aspect-ratio: auto;
+        }
+        .disc {
+            position: absolute;
+            z-index: 9999;
+            top:calc(cos(45) * 21vw);
+            left: 82vw;
+        }
+        .discord {
+            width: 90px;
+
+            aspect-ratio: 1;
+            background: none !important;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <img class="malogo" src="malogo.webp"/>
+        <div class="sc">
+            <img class="motm" src="modpage.webp"> 
+        </div>
+        <a href="mods.html">Get Mods</a>
+        <a>About</a>
+        <a>Resources</a>
+    </nav>
+    <a href="https://discord.gg/ApvQphaBuD" class="disc"><img src="discordbtn.webp" class="discord"></a>
+    <div class="twinbtns">
+        <button>
+            <img src="download.webp" class="dl">
+            New Mods
+        </button>
+        <button>
+            <img src="dl2.webp" class="dl">
+            Featured Mods
+        </button>
+    </div>
+    <div class="mods">
+        <div class="newmods modcategory">
+
+        </div>
+        <div class="featuredmods modcategory">
+            <div class="mod">
+                <span>Mod</span>
+            </div>
+            
+            <div class="mod">
+                <img src="pvzhybrid.webp" />
+                <span>Mod</span>
+            </div>
+            <div class="mod">
+                <span>Mod</span>
+            </div>
+        </div>
+    </div>
+    <script>
+        /** @type {HTMLElement} **/
+        let newModsElement = document.querySelector(".newmods")
+        let featuredModsELement = document.querySelector(".featuredmods")
+
+        function GetDifference(a, b) {
+            const _MS_PER_DAY = 1000 * 60 * 60 * 24;
+            // Discard the time and time-zone information.
+            const utc1 = Date.UTC(a.getFullYear(), a.getMonth(), a.getDate());
+            const utc2 = Date.UTC(b.getFullYear(), b.getMonth(), b.getDate());
+
+            return Math.floor((utc2 - utc1) / _MS_PER_DAY);
+        }
+
+        (async () => {
+            let moddata = await fetch("moddb.json")
+            /**@type {Array<any>}**/
+            let mods = await moddata.json()
+            console.log(mods.Mods[1])
+            let newArr = {}
+            for (let i = 0; i < mods.Mods.length; i++) {
+                let currMod = mods.Mods[i]
+                if (currMod.Release != "Unknown") {
+                    
+                    let dateDifference = Math.abs(GetDifference(new Date(), new Date(currMod.Release)))
+                    newArr[dateDifference] = currMod;
+                }
+            }
+            const newMods = Object.keys(newArr).sort().reduce(
+                (obj, key) => { 
+                    obj[key] = newArr[key]; 
+                    return obj;
+                }, 
+                {}
+            );
+            console.log(newMods)
+
+            for (let i = 0; i < 3; i++) {
+                let currMod = Object.values(newMods)[i]
+                let newMod = document.createElement("div")
+                newMod.className = "mod"
+                let newModLogo = document.createElement("img")
+                newModLogo.src = currMod.LogoPath
+                newMod.appendChild(newModLogo)
+                let newModTitle = document.createElement("span")
+                newModTitle.innerText =  currMod.Name
+                newMod.appendChild(newModTitle)
+
+                newModsElement.appendChild(newMod);
+            }   
+             })()
+    </script>
+</body>
+</html>
