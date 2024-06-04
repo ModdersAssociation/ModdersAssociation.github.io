@@ -86,7 +86,7 @@
             }else {
                 dialog.showModal()
             }
-            }}
+            
                         }}
                      class="absolute bottom-3 right-0 ml-auto mr-auto left-0 bg-purple-600 w-fit px-7 text-white font-bold text-xl rounded-xl hover:bg-purple-500 active:scale-90 transition-all hover:shadow-2xl shadow-black  py-2">Download</button>
                 </div>
