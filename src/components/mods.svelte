@@ -22,9 +22,13 @@
     <dialog
      on:click={(e) => {
         if (e.target == dialog) {
-            document.startViewTransition(() => {
-                            dialog.close()
-            }) 
+            if (document.startViewTransition) {
+                document.startViewTransition(() => {
+                                dialog.close()
+                }) 
+            }else {
+                dialog.close()
+            }
         }
      }}
      class="w-1/3 h-[90%] "
@@ -35,9 +39,13 @@
             {/each}
             <button class="absolute ml-auto mr-auto left-0 right-0 bottom-5 bg-red-500 w-fit p-2 px-10 rounded-lg text-white font-bold text-lg hover:bg-red-700 transition-all active:scale-90" 
             on:click={(e) => {
-            document.startViewTransition(() => {
-                            dialog.close()
-            }) 
+            if (document.startViewTransition) {
+                document.startViewTransition(() => {
+                                dialog.close()
+                }) 
+            }else {
+                dialog.close()
+            }
             }}
             >Close</button>
         </div>
@@ -46,9 +54,14 @@
         <div  class={"w-full h-[100vh] overflow-y-scroll relative grid grid-cols-3 auto-rows-max	 gap-x-2 gap-y-2 pt-3 px-5"}>
             {#each data.Mods as mod}
                 <button on:click={() => {
-                    document.startViewTransition(() => {
+                    if (document.startViewTransition) {
+                        document.startViewTransition(() => {
+                                        currentMod = mod
+                        }) 
+                    }else {
                         currentMod = mod
-                    })
+                    }
+                    }}
                 }} class="aspect-[110/100] mod-selector flex items-center justify-center hover:bg-gray-200 transition-colors bg-white darken"><img class="w-full max-h-full" src={mod.LogoPath} /></button>
             {/each}
         </div>
@@ -66,9 +79,14 @@
                     </p>
                     <button
                      on:click={() => {
-                            document.startViewTransition(() => {
+            if (document.startViewTransition) {
+                document.startViewTransition(() => {
                                 dialog.showModal()
-                            })
+                }) 
+            }else {
+                dialog.showModal()
+            }
+            }}
                         }}
                      class="absolute bottom-3 right-0 ml-auto mr-auto left-0 bg-purple-600 w-fit px-7 text-white font-bold text-xl rounded-xl hover:bg-purple-500 active:scale-90 transition-all hover:shadow-2xl shadow-black  py-2">Download</button>
                 </div>
