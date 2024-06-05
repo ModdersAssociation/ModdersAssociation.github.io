@@ -34,8 +34,8 @@
      class="w-1/3 h-[90%] "
      bind:this={dialog}>
         <div class="w-full h-full relative text-center  flex flex-col items-center py-2 gap-2">
-            {#each currentMod.DownloadLinks as download, i}
-                <a href={download} class="block h-fit bg-purple-600 w-fit px-7 text-white font-bold text-xl rounded-xl hover:bg-purple-500 active:scale-90 transition-all hover:shadow-2xl shadow-black shadow- py-2">{currentMod.Versions[i]}</a>
+            {#each currentMod.DownloadLinks.reverse() as download, i}
+                <a href={download} class="block h-fit bg-purple-600 w-fit px-7 text-white font-bold text-xl rounded-xl hover:bg-purple-500 active:scale-90 transition-all hover:shadow-2xl shadow-black shadow- py-2">{currentMod.Versions[currentMod.Versions.length - i]}</a>
             {/each}
             <button class="absolute ml-auto mr-auto left-0 right-0 bottom-5 bg-red-500 w-fit p-2 px-10 rounded-lg text-white font-bold text-lg hover:bg-red-700 transition-all active:scale-90" 
             on:click={(e) => {
