@@ -1,4 +1,4 @@
-z<script lang="ts">
+<script lang="ts">
     import data from "../moddb.json"
     import * as Dialog from "$lib/components/ui/dialog";
 
