@@ -93,7 +93,7 @@
         </div>
     </div>
 
-    <a class="absolute bottom-5 left-5 bg-[url(Almanac_IndexButton.png)] aspect-[164/26] h-[2vw] bg-cover pl-10 text-gray-800 hover:bg-[url(Almanac_IndexButtonHighlight.png)]" href="/">Back</a>
+    <a class="absolute bottom-5 left-5 bg-[url(https://moddersassociation.github.io/Almanac_IndexButton.png)] aspect-[164/26] h-[2vw] bg-cover pl-10 text-gray-800 hover:bg-[url(https://moddersassociation.github.io/Almanac_IndexButtonHighlight.png)]" href="/">Back</a>
 </div>
 
 
