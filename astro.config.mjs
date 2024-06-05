@@ -7,6 +7,6 @@ import alpinejs from "@astrojs/alpinejs";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://astronaut.github.io',
+  site: 'https://moddersassociation.github.io',
   integrations: [svelte(), tailwind(), vue(), alpinejs()]
 });
